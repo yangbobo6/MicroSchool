@@ -1,10 +1,10 @@
-package com.microschool;
+package com.example.schoolmbg;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MicroSchoolApplicationTests {
+class SchoolMbgApplicationTests {
 
     @Test
     void contextLoads() {

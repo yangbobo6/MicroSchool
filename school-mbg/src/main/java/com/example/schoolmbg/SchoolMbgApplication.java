@@ -1,13 +1,13 @@
-package com.microschool;
+package com.example.schoolmbg;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MicroSchoolApplication {
+public class SchoolMbgApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MicroSchoolApplication.class, args);
+        SpringApplication.run(SchoolMbgApplication.class, args);
     }
 
 }

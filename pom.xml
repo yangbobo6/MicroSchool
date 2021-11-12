@@ -37,6 +37,8 @@
         <skipTests>true</skipTests>
         <pagehelper.version>5.2.0</pagehelper.version>
         <swagger2.version>2.9.2</swagger2.version>
+        <swagger-models.version>1.6.0</swagger-models.version>
+        <swagger-annotations.version>1.6.0</swagger-annotations.version>
 
         <druid.version>1.1.23</druid.version>
         <hutool.version>5.4.0</hutool.version>
@@ -45,6 +47,8 @@
         <mybatis-generator.version>1.4.0</mybatis-generator.version>
         <mybatis.version>3.5.5</mybatis.version>
         <mysql-connector.version>8.0.20</mysql-connector.version>
+
+        <jjwt.version>0.9.0</jjwt.version>
 
         <school-mbg>0.0.1-SNAPSHOT</school-mbg>
 
@@ -139,6 +143,8 @@
                 <artifactId>swagger-annotations</artifactId>
                 <version>${swagger-annotations.version}</version>
             </dependency>
+
+
             <!-- MyBatis 生成器 -->
             <dependency>
                 <groupId>org.mybatis.generator</groupId>

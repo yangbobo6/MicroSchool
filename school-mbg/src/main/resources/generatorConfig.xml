@@ -31,15 +31,15 @@
         </jdbcConnection>
 
 
-        <!--指定生成model的路径-->
-        <javaModelGenerator targetPackage="com.school.generate.model" targetProject="school-mbg/src/main/java"/>
-        <!--指定生成mapper.xml的路径-->
-        <sqlMapGenerator targetPackage="com.school.generate.model" targetProject="school-mbg/src/main/resources"/>
-        <!--指定生成mapper接口的的路径-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.macro.mall.tiny.mbg.mapper"
-                             targetProject="mall-tiny-01\src\main\java"/>
+        <!--指定生成 model的路径-->
+        <javaModelGenerator targetPackage="com.school.generate.mbg.model" targetProject="school-mbg/src/main/java"/>
+        <!--指定生成 mapper.xml的路径-->
+        <sqlMapGenerator targetPackage="com.school.generate.mapper" targetProject="school-mbg/src/main/resources"/>
+        <!--指定生成 mapper接口的的路径-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.school.generate.mbg.mapper"
+                             targetProject="school-mbg/src/main/java"/>
         <!--生成全部表tableName设为%-->
-        <table tableName="pms_brand">
+        <table tableName="%">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
     </context>

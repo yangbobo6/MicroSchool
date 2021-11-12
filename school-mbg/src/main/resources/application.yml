@@ -5,10 +5,10 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/micro_school?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     username: root
-    password: 123456
+    password: 522653
 
 mybatis:
-  mapper-locations:
-    - classpath:mapper/*.xml
-    - classpath*:com/**/mapper/*.xml
+  mapper-locations:  #配置mapper.xml映射的文件位置
+    - classpath:mapper/*.xml  #自己手动定义的xml
+    - classpath*:com/**/mapper/*.xml #generator自动生成的
 

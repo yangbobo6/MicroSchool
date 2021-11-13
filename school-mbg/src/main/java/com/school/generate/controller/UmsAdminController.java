@@ -2,6 +2,7 @@ package com.school.generate.controller;
 
 import com.school.generate.mbg.model.UmsAdmin;
 import com.school.generate.service.impl.UmsAdminService;
+import com.school.schoolcommon.api.CommonResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,9 +26,9 @@ public class UmsAdminController {
     @ApiOperation("获取管理表内所有的成员信息")
     @RequestMapping(value = "listAll",method = RequestMethod.GET)
     @ResponseBody
-    public List<UmsAdmin> listAll(){
+    public CommonResult<List<UmsAdmin>> listAll(){
         List<UmsAdmin> list =adminService.listAll();
-        return list;
+        return CommonResult.success(list);
     }
 
 

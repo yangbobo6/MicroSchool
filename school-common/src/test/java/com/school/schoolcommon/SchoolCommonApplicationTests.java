@@ -8,6 +8,7 @@ class SchoolCommonApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println("yangbo");
     }
 
 }

@@ -1,0 +1,4 @@
+jwt:
+  tokenHead: 'Bearer'      #jwt拿到的头
+  secret: school-secret    #jwt加密使用的密钥
+  expiration: 604800       #jwt的超时时间

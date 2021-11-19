@@ -27,4 +27,16 @@ public class CommonResult<T> {
         return new CommonResult<T>(errorCode.getCode(), errorCode.getMessage(), null);
     }
 
+
+    //未登录返回结果
+    public static <T> CommonResult<T> unauthorized(T data) {
+        return new CommonResult<T>(ResultCode.UNAUTHORIZED.getCode(), ResultCode.UNAUTHORIZED.getMessage(), data);
+    }
+    //没有权限
+    public static <T> CommonResult<T> forbidden(T data) {
+        return new CommonResult<T>(ResultCode.FORBIDDEN.getCode(), ResultCode.FORBIDDEN.getMessage(), data);
+    }
+
+
+
 }

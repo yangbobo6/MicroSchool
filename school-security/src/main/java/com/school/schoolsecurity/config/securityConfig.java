@@ -1,6 +1,9 @@
 package com.school.schoolsecurity.config;
 
 
+import com.school.schoolsecurity.Component.RestAuthenticationEntryPoint;
+import com.school.schoolsecurity.Component.RestfulAccessDeniedHandler;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;
@@ -12,6 +15,11 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 * */
 public class securityConfig extends WebSecurityConfigurerAdapter {
 
+    @Autowired
+    RestfulAccessDeniedHandler restfulAccessDeniedHandler;
+
+    @Autowired
+    private RestAuthenticationEntryPoint restAuthenticationEntryPoint;
 
 
     //

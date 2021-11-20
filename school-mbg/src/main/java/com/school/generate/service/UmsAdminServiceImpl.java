@@ -27,6 +27,8 @@ public class UmsAdminServiceImpl implements UmsAdminService {
 
     @Override
     public int deleteAdmin(Integer id) {
-        return adminMapper.deleteByPrimaryKey(id);
+        return 0;
     }
+
+
 }

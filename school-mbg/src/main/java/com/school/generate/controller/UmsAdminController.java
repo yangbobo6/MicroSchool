@@ -38,7 +38,6 @@ public class UmsAdminController {
     public void createAdmin(){
         UmsAdmin umsAdmin = new UmsAdmin();
         //umsAdmin.setId(02);
-        umsAdmin.setSex("m");
         umsAdmin.setCreateTime(new Date());
         umsAdmin.setPassword("123456");
         umsAdmin.setStatus(1);

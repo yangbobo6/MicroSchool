@@ -10,17 +10,19 @@ public class UmsAdmin implements Serializable {
 
     private String password;
 
+    private String icon;
+
+    private String email;
+
+    private String nickName;
+
+    private String note;
+
     private Date createTime;
 
     private Date loginTime;
 
     private Integer status;
-
-    private String icon;
-
-    private String email;
-
-    private String nickname;
 
     private static final long serialVersionUID = 1L;
 
@@ -48,6 +50,38 @@ public class UmsAdmin implements Serializable {
         this.password = password;
     }
 
+    public String getIcon() {
+        return icon;
+    }
+
+    public void setIcon(String icon) {
+        this.icon = icon;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
+    }
+
     public Date getCreateTime() {
         return createTime;
     }
@@ -72,30 +106,6 @@ public class UmsAdmin implements Serializable {
         this.status = status;
     }
 
-    public String getIcon() {
-        return icon;
-    }
-
-    public void setIcon(String icon) {
-        this.icon = icon;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -105,12 +115,13 @@ public class UmsAdmin implements Serializable {
         sb.append(", id=").append(id);
         sb.append(", username=").append(username);
         sb.append(", password=").append(password);
+        sb.append(", icon=").append(icon);
+        sb.append(", email=").append(email);
+        sb.append(", nickName=").append(nickName);
+        sb.append(", note=").append(note);
         sb.append(", createTime=").append(createTime);
         sb.append(", loginTime=").append(loginTime);
         sb.append(", status=").append(status);
-        sb.append(", icon=").append(icon);
-        sb.append(", email=").append(email);
-        sb.append(", nickname=").append(nickname);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();
